@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Imagenes/Vector.png">    
+            </div>
+        </header>
+
+
+        <main>
+            <section class="cajaprincipal">
+                <div class="cajasecundario">
+                    <label for="textoprincipal"></label>
+                    <textarea cols="90" rows="55" id="textoprincipal" class="textoDeClase" required placeholder=" Ingrese el texto aqui" style="width: 60%; height: 550px;"></textarea>
+                </div>
+
+                <div class="claseAdvertencia">
+                    <h2> <img src="Imagenes/iconsAtt.png"> </h2>
+                    <h3 class="textoAdvertencia">Solo en letras minúsculas y sin acentos</h3>
+                </div>
+
+                <div class="botones">
+                    <button class="botonEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="botonDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="claseprincipalCopiar">
+                <div class="clasesecundariaCopiar">
+                        <label for="textoprincipalCopiar"></label>
+                        <textarea cols="90" rows="55" id="textoprincipalCopiar" class="textoDeCopiar" required placeholder=" Ningún mensaje fue encontrado" style="width: 70%; height: 550px;"></textarea>
+                        <button id="botoncopiar" class="boton_copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <img src="imagenes/Marca_personal.png" width="40">
+            <p>Realizado por Victor Moran</p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="alerta/sweetAlert.js"></script>
+
+    </body>
+</html>

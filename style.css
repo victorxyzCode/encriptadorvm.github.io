@@ -1,0 +1,241 @@
+
+header{
+    background: linear-gradient(180deg, rgb(137, 198, 255), white);
+    padding: 40px;
+}
+
+main{
+    padding: 20px 0;
+    width: auto;
+    display: flex;
+}
+
+.cajaprincipal{
+    width: 60%;
+}
+
+.cajasecundaria{
+    margin: 0;
+    width: 100%;
+}
+
+.textoDeClase{
+    margin: 0 0 0 25%;
+    position: relative;
+    resize: none;
+    background-color: #E9ECF8;
+    border-radius: 24px;
+    box-shadow: 0.1px 0.1px 3px rgb(137, 198, 255);
+    border: 0;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+#textoprincipal, #textoprincipalCopiar {
+    padding: 20px;
+}
+
+textarea::placeholder{
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.claseAdvertencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 18px;
+    margin: 5px 20%;
+}
+
+.textoAdvertencia{
+    width: 400px;
+    height: 18px;
+    margin: 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display:block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 24px;
+    width: 100%;
+    height: 70px;
+    margin: 5px 0 5px 20%;
+}
+
+.botonEncriptar{
+    width: 35%;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: white;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botonDesencriptar{
+    width: 35%;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border-color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #0A3871;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.claseprincipalCopiar{
+    width: 40%;
+}
+
+.clasesecundariaCopiar{
+    text-align: center;
+    width: 80%;
+    height: 550px;
+    margin: auto;
+}
+
+.textoDeCopiar{
+    resize: none;
+    margin: auto;
+    border-radius: 24px;
+    box-shadow: 0.1px 0.1px 3px rgb(137, 198, 255);
+    border-width: 0;
+    background-image: url(Imagenes/Muneco.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+}
+
+#textoprincipalCopiar::placeholder{
+    vertical-align: bottom;
+    text-align:center;
+}
+
+.boton_copiar{
+    width: 35%;
+    height: 67px;
+    margin: 23px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border-color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #0A3871;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer{
+    background: linear-gradient(0deg, rgb(137, 198, 255), white);
+    text-align: center;
+    padding: 40px;  
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width:480px) {
+
+main{
+    display: block;
+
+}
+
+.logo{
+    width: auto;
+}
+
+.cajaprincipal{
+    width: 100%;
+    text-align: center;
+}
+
+.cajasecundaria{
+    text-align: center;
+}
+
+.textoDeClase{
+    margin: auto;
+}
+
+.claseAdvertencia{
+    width: auto;
+    display: inline-flex;
+    margin: auto;
+}
+
+.textoAdvertencia{
+    width: auto;
+}
+
+.botones{
+    width: auto;
+    margin: auto;
+}
+
+.botonDesencriptar{
+    width: auto;
+}
+
+.botonEncriptar{
+    width: auto;
+}
+
+.claseprincipalCopiar{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+
+.clasesecundariaCopiar{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.textoDeCopiar{
+    width: 100%;
+}
+}
